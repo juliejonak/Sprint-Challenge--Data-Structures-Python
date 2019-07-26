@@ -1,4 +1,5 @@
 import time
+from balanced_bst import Balanced_BST
 
 start_time = time.time()
 

@@ -13,6 +13,23 @@ class Node:
     def __str__(self):
         print(f"Value: {self.value}")
 
+    def contains(self, target):
+        if self.value == target:
+            return True
+        
+        if target < self.value:
+            if not self.left:
+                return False
+            else:
+                return self.left.contains(target)
+        
+        else:
+            if not self.right:
+                return False
+            else:
+                return self.right.contains(target)
+
+
 class Balanced_BST:
     def __init__(self):
         # Sets a root node
