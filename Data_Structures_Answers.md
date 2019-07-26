@@ -9,7 +9,7 @@ Add your answers to the questions below.
 `O(1)` as it only sets existing space allocated for the RingBuffer.
 
 3. What is the runtime complexity of your ring buffer's `get` method?
-`O(n)` because filter runs through each itme in self.storage, to only add to the new list items that are not None.
+`O(n)` because filter runs through each item in self.storage, to only add to the new list items that are not None.
 
 4. What is the space complexity of your ring buffer's `get` method?
 
