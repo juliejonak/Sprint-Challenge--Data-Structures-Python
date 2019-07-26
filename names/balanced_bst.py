@@ -65,7 +65,7 @@ class Balanced_BST(object):
 
         return new_root
 
-    def rotate_right(self):
+    def rotate_right(self, root):
         new_root = root.left
         T2 = new_root.right
 
@@ -104,12 +104,12 @@ class Balanced_BST(object):
                 return self.contains(root.right, target)
     
 
-tree = Balanced_BST()
-root = None
-test = [1,2,3,4,5,6,7]
+# tree = Balanced_BST()
+# root = None
+# test = [1,2,3,4,5,6,7]
 
-print('inserting test data')
-for key in test:
-    root = tree.insert(root, key)
-    print(f"Inserted {key}")
-print(tree.contains(root, 6))
+# print('inserting test data')
+# for key in test:
+#     root = tree.insert(root, key)
+#     print(f"Inserted {key}")
+# print(tree.contains(root, 6))

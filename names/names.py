@@ -6,12 +6,23 @@ start_time = time.time()
 # New approach: use a balanced binary search tree for O(n log n) time complexity
 
 # Open each file and read list, converting to a balanced BST
-f = open('names_3.txt', 'r')
+f = open('names_1.txt', 'r')
+# tree_1 = Balanced_BST()
+# root = None
+# for line in f:
+#     root = tree_1.insert(root, line)
+#     print(f"Tree 1 inserted: {line}")
 names_1 = f.read().split("\n")  # Shortened test list of names
 f.close()
 
-f = open('names_4.txt', 'r')
-names_2 = f.read().split("\n")  # Shortened test list of names
+f = open('names_2.txt', 'r')
+tree_2 = Balanced_BST()
+root = None
+for line in f:
+    print(f"Adding: {line}")
+    root = tree_2.insert(root, line)
+print(tree_2.contains(root, "Nathen Bishop"))
+# names_2 = f.read().split("\n")  # Shortened test list of names
 f.close()
 
 # f = open('names_1.txt', 'r')
@@ -25,12 +36,11 @@ f.close()
 duplicates = []
 
 # Iterate through name_1, searching for match in name_2
-for name_1 in names_1:
-    for name_2 in names_2:
-        if name_1 == name_2:
-            duplicates.append(name_1)
-
-
+for name in names_1:
+    # print(tree_2.contains(root,name))
+    if tree_2.contains(root, name):
+        print(f"Duplicate found: {name}")
+        duplicates.append(name)
 
 
 end_time = time.time()
