@@ -1,5 +1,7 @@
 Add your answers to the questions below.
 
+Opening Sprint Challenge and PR to track commits.
+
 1. What is the runtime complexity of your ring buffer's `append` method?
 
 2. What is the space complexity of your ring buffer's `append` function?
