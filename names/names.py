@@ -3,12 +3,6 @@ import time
 start_time = time.time()
 
 # New approach: use a balanced binary search tree for O(n log n) time complexity
-# Consideration: Do both lists use capitalization equally? Yes. But in unknown data sets, should convert to all caps to avoid missed duplicates from casing differences. Can use upper() when creating tree, and .title() before printing duplicate list
-# Edge Case: One or both lists are empty? Still prints nothing.
-# Edge Case: No duplicates found. Print nothing or error message?
-
-
-
 
 # Open each file and read list, converting to a balanced BST
 f = open('names_3.txt', 'r')
