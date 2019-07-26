@@ -113,3 +113,6 @@ class Balanced_BST(object):
 #     root = tree.insert(root, key)
 #     print(f"Inserted {key}")
 # print(tree.contains(root, 6))
+
+# for key in test:
+#     print(f"Does test tree contain {key}? {tree.contains(root,key)}")
